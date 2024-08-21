@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+}
+
+:root{
+    --primaryColor : rgb(254, 158, 34);
+}
+
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: var(--primaryColor);
+}
+
+.navbar{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo1{
+    width: 50px;
+    height: auto;
+}
+
+.logoText{
+    color: rgb(218, 5, 5);
+    font-size: 30px;
+}
+
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarItems{
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav li a:hover{
+    background-color: bisque;
+    color: darkorange;
+}
+
+nav li .dropDown{
+    display: none;
+    position: absolute;
+    padding: 20px 10px;
+    /* background-color: coral; */
+
+}
+
+nav li .dropDown > li{
+    background-color: coral;
+    border-radius: 10px;
+    margin-top: 10px;
+    opacity: 100%;
+    padding: 10px;
+}
+
+nav li:hover .dropDown{
+    display: block;
+}
+
+
+
