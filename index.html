@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,16 @@
     <link rel="stylesheet" href="./CSS/style.css">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
+
 <body class="roboto">
 
     <!-- Navbar -->
@@ -26,11 +35,11 @@
                     <li>
                         <a href="#">Home</a>
                     </li>
-                    
+
                     <li>
                         <a href="#">About Us</a>
                     </li>
-                    
+
                     <li>
                         <a href="#">Campaign</a>
                         <div class="dropDownDiv">
@@ -44,7 +53,7 @@
                             </ul>
                         </div>
                     </li>
-                    
+
                     <li>
                         <a href="#">Blogs</a>
                         <div class="dropDownDiv">
@@ -58,7 +67,7 @@
                             </ul>
                         </div>
                     </li>
-                    
+
                     <li>
                         <a href="#">Contact</a>
                     </li>
@@ -72,11 +81,11 @@
                         <li>
                             <a href="#">Home</a>
                         </li>
-                        
+
                         <li>
                             <a href="#">About Us</a>
                         </li>
-                        
+
                         <li>
                             <a href="#">Campaign</a>
                             <div class="smallDropDownDiv">
@@ -90,7 +99,7 @@
                                 </ul>
                             </div>
                         </li>
-                        
+
                         <li>
                             <a href="#">Blogs</a>
                             <div class="smallDropDownDiv">
@@ -104,7 +113,7 @@
                                 </ul>
                             </div>
                         </li>
-                        
+
                         <li>
                             <a href="#">Contact</a>
                         </li>
@@ -114,5 +123,45 @@
             </div>
         </nav>
     </header>
+
+    <!-- Banner -->
+    <section class="bannerStart">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/s1.jpg" alt="s1" class="bannerPic">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/s2.jpg" alt="s2" class="bannerPic">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/s3.jpg" alt="s3" class="bannerPic">
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+
+    </section>
+
+    <section>
+        
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
