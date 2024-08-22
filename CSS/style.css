@@ -14,8 +14,12 @@
     font-style: normal;
 }
 
+
+/* Navbar CSS */
+
 header{
     background-color: var(--primaryColor);
+    max-width: 100%;
 }
 
 .navbar{
@@ -25,6 +29,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    background-color: var(--primaryColor);
 }
 
 .logo1{
@@ -41,6 +46,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
 }
 
 .navbarItems{
@@ -67,25 +73,139 @@ nav li a:hover{
     color: darkorange;
 }
 
-nav li .dropDown{
+nav li .dropDownDiv{
     display: none;
     position: absolute;
-    padding: 20px 10px;
+    padding: 40px 0;
     /* background-color: coral; */
 
+}
+
+nav li .dropDown{
+    padding: 10px 20px;
+    background-color: orange;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 2s ease-in-out;
+}
+
+nav li .dropDown:hover{
+    transform: scale(1.3);
 }
 
 nav li .dropDown > li{
     background-color: coral;
     border-radius: 10px;
     margin-top: 10px;
-    opacity: 100%;
     padding: 10px;
+    margin-right: 0;
 }
 
-nav li:hover .dropDown{
+nav li .dropDown > li> a{
+    font-size: 17px;
+}
+
+nav li:hover .dropDownDiv{
     display: block;
 }
 
+.barNav{
+    display: none;
+}
 
+@media screen and (min-width: 640px) and (max-width: 992px){
+    
+}
+
+
+@media screen and (max-width: 640px) {
+    .barNav{
+        display: block;
+        margin-right: 20px;
+        font-size: 25px;
+        color: brown;
+    }
+
+    .navbarItems{
+        display: none;
+        flex-direction: column;
+        background-color: var(--primaryColor);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .logoDiv{
+        margin-left: 20px;
+    }
+
+    .barNav .smallNavbarItems {
+        display: none;
+        position: absolute;
+        translate: -120px -40px;
+        padding-top: 80px;
+    }
+
+    .barNav:hover .smallNavbarItems{
+        display: block;
+    }
+
+    .smallNavbarItems > ul{
+        background-color: orange;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+
+    .smallNavbarItems > ul > li{
+        padding-top: 10px;
+    }
+
+    .smallNavbarItems > ul > li:last-child{
+        padding-bottom: 10px;
+    }
+    
+    .barNav li .smallDropDownDiv{
+        display: none;
+        position: absolute;
+        translate: -200px -40px;
+        padding-right: 20px;
+    }
+
+    .barNav li:hover .smallDropDownDiv{
+        display: block;
+    }
+
+    nav li .smallDropDown{
+        width: 7em;
+        padding: 5px;
+        background-color: orange;
+        border-radius: 10px;
+        transition: transform 2s ease-in-out;
+    }
+
+    nav li .smallDropDown > li{
+        border-radius: 10px;
+        margin-top: 2px;
+        padding: 2px;
+
+    }
+
+    nav li .smallDropDown > li:last-child{
+        padding-bottom: 10px;
+    }
+    
+    nav li .smallDropDown > li> a{
+        font-size: 14px;
+        margin-left: 0;
+    }
+    
+    nav li:hover .smallDropDownDiv{
+        display: block;
+    }
+    
+    
+    
+}
 
