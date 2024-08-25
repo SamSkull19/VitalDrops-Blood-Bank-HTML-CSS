@@ -182,6 +182,123 @@ nav li:hover .dropDownDiv{
     color: var(--primaryColor);
 }
 
+
+/* Footer */
+
+.footer{
+    margin-top: 50px;
+    background-color: var(--primaryColor);
+    padding: 30px 0px;
+}
+
+.footerMain{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footerHead{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid red;
+    padding-bottom: 30px;
+}
+
+.footerText{
+    color: rgb(218, 5, 5);
+    font-size: 18px;
+    font-weight: 500;
+    border-left: 2px solid red;
+    padding-left: 50px;
+}
+
+.footerBody{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid red;
+}
+
+.socialList{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.socialIds{
+    text-decoration: none;
+    color: rgb(35, 2, 2);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footerSocialIcons{
+    margin-right: 10px;
+}
+
+.rulesList{
+    margin-bottom: 10px;
+}
+
+.rulesListLink{
+    text-decoration: none;
+    color: rgb(35, 2, 2);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footerBodyHeader{
+    font-size: 22px;
+    margin: 15px 0px;
+}
+
+.footerNewLetterBox{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid rgb(67, 1, 14);
+    background-color: rgb(175, 6, 6);
+    color: rgb(31, 0, 0);
+}
+
+.footerNewLetterBox::placeholder{
+    color: rgb(253, 207, 68);
+}
+
+.footerNewLetterBox:focus{
+    background-color: rgb(255, 106, 0);
+    border: 1px solid rgb(63, 54, 2);
+}
+
+.footerNewLetterBoxButton{
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    color: yellow;
+    background-color: rgb(218, 5, 5);
+    border: 0;
+    font-size: 14px;
+}
+
+.footerNewLetterBoxButton:hover{
+    color: rgb(218, 5, 5);
+    background-color: yellow;
+}
+
+.footerEndTexts{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
 @media screen and (min-width: 640px) and (max-width: 992px){
     .bannerText{
         width: 70%;
@@ -214,6 +331,37 @@ nav li:hover .dropDownDiv{
         font-size: 20px;
         border-radius: 15px;
         margin-top: 40px;
+    }
+
+        /* Footer */
+    .footerHead{
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .footerText{
+        font-size: 14px;
+        font-weight: 500;
+        border-left: 0;
+        padding-left: 10px;
+    }
+
+    .footerBody{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0px;
+        margin-left: 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid red;
+    }
+
+    .footerBodyHeader{
+        margin-top: 40px;
+    }
+
+    .footerNewLetterBox{
+        width: 80%;
     }
 }
 
@@ -338,6 +486,36 @@ nav li:hover .dropDownDiv{
         font-size: 20px;
         border-radius: 15px;
         margin-top: 40px;
+    }
+
+    /* Footer */
+    .footerHead{
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .footerText{
+        font-size: 14px;
+        font-weight: 500;
+        border-left: 0;
+        padding-left: 10px;
+    }
+
+    .footerBody{
+        flex-direction: column;
+        margin: 20px 0px;
+        margin-left: 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid red;
+    }
+
+    .footerBodyHeader{
+        margin-top: 40px;
+    }
+
+    .footerNewLetterBox{
+        width: 80%;
     }
     
 }
