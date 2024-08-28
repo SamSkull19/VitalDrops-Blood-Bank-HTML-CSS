@@ -210,7 +210,7 @@ nav li:hover .dropDownDiv{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.69); 
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: 2; 
     border-radius: 15px;
 }
@@ -222,25 +222,28 @@ nav li:hover .dropDownDiv{
     border-radius: 15px;
 }
 
+
 .donorPathTexts{
     width: 400px;
     height: 250px;
     position: absolute;
-    translate: 0 -225px;
+    translate: 0 -180px;
     z-index: 10;
 }
 
+/* translate: 0 -170px; */
 .donorPathTextsTitle{
     color: red;
-    font-size: 25px;
+    font-size: 40px;
     padding: 0 20px;
 }
 
 .donorPathTextsDescription{
     color: var(--primaryColor);
-    font-size: 18px;
+    font-size: 20px;
     text-align: justify;
     padding: 20px;
+    font-weight: 500;
 }
 
 .pr-10{
@@ -254,11 +257,25 @@ nav li:hover .dropDownDiv{
 }
 
 .donatePath{
-    transition: transform 1s ease-in-out 0.5s;
+    transition: transform 1s ease-in-out 0.1s;
 }
 .donatePath:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
+.donorPathTextsDetails{
+    display: none;
+}
+
+.donatePathSub:hover .donorPathTextsDetails{
+    display: block;
+    translate: 0 -60px;
+    
+}
+
+.donatePathSub:hover .donorPathTextsTitle{
+    display: none;
+} 
 
 /* Footer */
 
