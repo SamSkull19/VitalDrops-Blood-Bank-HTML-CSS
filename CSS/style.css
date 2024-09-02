@@ -105,7 +105,7 @@ nav li .dropDown{
 }
 
 nav li .dropDown:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 nav li .dropDown > li{
@@ -387,10 +387,16 @@ nav li:hover .dropDownDiv{
     border-bottom: 1px solid red;
 }
 
+.footerAddress{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .socialList{
     margin-bottom: 10px;
     font-size: 18px;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 .socialIds{
@@ -400,9 +406,14 @@ nav li:hover .dropDownDiv{
     font-weight: 600;
 }
 
+.socialIds:hover{
+    color: rgb(202, 3, 3);
+}
+
 .footerSocialIcons{
     margin-right: 10px;
 }
+
 
 .rulesList{
     margin-bottom: 10px;
@@ -413,6 +424,10 @@ nav li:hover .dropDownDiv{
     color: rgb(35, 2, 2);
     font-size: 18px;
     font-weight: 500;
+}
+
+.rulesListLink:hover{
+    color: rgb(202, 3, 3);
 }
 
 .footerBodyHeader{
